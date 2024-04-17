@@ -1,0 +1,18 @@
+{
+	"name": "AzureSqlMI1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlMI",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=paulfreemi.public.541953795e00.database.windows.net,3342;Initial Catalog=Accounting;User ID=markpumc",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1link",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "mysecret1"
+			}
+		}
+	}
+}
